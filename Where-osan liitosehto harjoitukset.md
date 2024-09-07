@@ -59,5 +59,29 @@ airport.iso_country = country.iso_country and screen_name = "Ilkka";
 
 
 tehtävä 8
+
+select name
+from goal, goal_reached, game
+where game.id = game_id and goal.id = goal_id and screen_name = "Heini";
+
+![image](https://github.com/user-attachments/assets/f0542aa7-cf96-4265-8fb4-a02ba789a59a)
+
 tehtävä 9
+
+select airport.name
+from airport, goal, goal_reached, game
+where goal_reached.game_Id = game.Id and 
+goal_id = goal.Id and location = Ident and screen_name = "Ilkka" and goal.name ="CLOUDS";
+
+![image](https://github.com/user-attachments/assets/f98ae5cf-5061-4ac7-9efe-7ba3e5e6b325)
+
 tehtävä 10
+
+select country.name
+from country, airport, goal, goal_reached, game
+where airport.iso_country = country.iso_country and goal_reached.game_Id = game.Id and 
+goal_id = goal.Id and location = Ident and screen_name = "Ilkka" and goal.name ="CLOUDS";
+
+![image](https://github.com/user-attachments/assets/8e8c6033-adf6-49a1-961c-95d6e766a385)
+
+
